@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="IoZ-z4-yop">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="290-4m-9Jj">
+            <objects>
+                <tabBarController id="IoZ-z4-yop" customClass="TVTabBarController" customModule="TV_Show" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="R6l-OM-T5f">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="selectedImageTintColor" red="1" green="0.77102325559999996" blue="0.14429680519999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="ceS-sw-tPU" kind="relationship" relationship="viewControllers" id="WJl-MI-kf2"/>
+                        <segue destination="jAh-ZK-cuC" kind="relationship" relationship="viewControllers" id="gUs-t0-4Xr"/>
+                        <segue destination="Nsl-hk-aAU" kind="relationship" relationship="viewControllers" id="I2n-dT-XRt"/>
+                        <segue destination="j9o-vq-4t7" kind="relationship" relationship="viewControllers" id="X1j-pg-NOZ"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Guo-Jd-wiW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1826" y="-15"/>
+        </scene>
+        <!--直播-->
+        <scene sceneID="zMf-UL-Ifj">
+            <objects>
+                <navigationController id="ceS-sw-tPU" customClass="TVNavigationController" customModule="TV_Show" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="直播" image="live-n" selectedImage="live-p" id="Aaz-46-kkj"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="UcQ-yc-mdH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="GKh-Wy-tB0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NmK-Nt-fxM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-862" y="-16"/>
+        </scene>
+        <!--排行-->
+        <scene sceneID="2sf-JK-jKI">
+            <objects>
+                <viewController id="jAh-ZK-cuC" customClass="ViewController" customModule="TV_Show" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aC6-x5-9r9"/>
+                        <viewControllerLayoutGuide type="bottom" id="4SU-ml-KJ1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FuW-Ia-chm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="排行" image="ranking-n" selectedImage="ranking-p" id="l3Z-HU-9Dp"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K87-eB-sGt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-863" y="725"/>
+        </scene>
+        <!--发现-->
+        <scene sceneID="Cvl-wb-JQv">
+            <objects>
+                <viewController id="Nsl-hk-aAU" customClass="ViewController" customModule="TV_Show" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cr9-Ey-Elk"/>
+                        <viewControllerLayoutGuide type="bottom" id="y39-Zl-vTa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5kT-TN-ngx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="发现" image="found-n" selectedImage="found-p" id="w5o-hW-gZR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yuW-Kn-MMb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-863" y="1476"/>
+        </scene>
+        <!--我的-->
+        <scene sceneID="Igz-2s-TiU">
+            <objects>
+                <viewController id="j9o-vq-4t7" customClass="ViewController" customModule="TV_Show" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zC4-ed-Y1X"/>
+                        <viewControllerLayoutGuide type="bottom" id="WkT-uZ-ulq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3F0-qr-vO5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="我的" image="mine-n" selectedImage="mine-p" id="Vb5-m9-4DQ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hED-Js-HNA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-863" y="2212"/>
+        </scene>
+        <!--Home Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="TVHomeController" customModule="TV_Show" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="kAR-wN-qHU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="33" y="-16"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="found-n" width="25" height="19"/>
+        <image name="found-p" width="25" height="19"/>
+        <image name="live-n" width="25" height="19"/>
+        <image name="live-p" width="25" height="19"/>
+        <image name="mine-n" width="25" height="19"/>
+        <image name="mine-p" width="25" height="19"/>
+        <image name="ranking-n" width="25" height="19"/>
+        <image name="ranking-p" width="25" height="19"/>
+    </resources>
+</document>
